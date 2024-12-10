@@ -20,8 +20,20 @@ class Dish {
         this.dishPrice = dishPrice;
     }
 
+    public int getDishID() {
+        return dishID;
+    }
+
     public String getDishName() {
         return dishName;
+    }
+
+    public int getPreparingTime() {
+        return preparingTime;
+    }
+
+    public double getDishPrice() {
+        return dishPrice;
     }
 }
 
@@ -67,14 +79,10 @@ class FestivalService {
         return dishesByChef;
     }
 
-    public Map<String, List<String>> dishesOfChefs(List<Chef> chefs) {
-        Map<String, List<String>> chefsAndDishes = new TreeMap<>();
+    public Map<String, List<Dish>> dishesOfChefs(List<Chef> chefs) {
+        Map<String, List<Dish>> chefsAndDishes = new TreeMap<>();
         for (Chef C : chefs) {
-            List<String> tmpDishes = new ArrayList<>();
-            for (Dish tmpDish : C.getChefDishes()) {
-                tmpDishes.add(tmpDish.getDishName());
-            }
-            chefsAndDishes.put(C.getChefName(), tmpDishes);
+            chefsAndDishes.put(C.getChefName(), C.getChefDishes());
         }
         return chefsAndDishes;
     }
@@ -121,7 +129,7 @@ public class Solution {
 
         FestivalService FS = new FestivalService();
         List<String> res1 = FS.searchDishesByChefInitial(Chefs, sInitial);
-        Map<String, List<String>> res2 = FS.dishesOfChefs(Chefs);
+        Map<String, List<Dish>> res2 = FS.dishesOfChefs(Chefs);
 
         if (res1.isEmpty()) {
             System.out.println("No such dishes with more than 2 vowels in name for given chef initial.");
@@ -129,8 +137,14 @@ public class Solution {
             System.out.println("Dishes: " + String.join(", ", res1));
         }
 
-        res2.forEach((key, values) -> {
-            System.out.println(key + ": " + String.join(", ", values));
+        res2.forEach((chefName, dishes) -> {
+            System.out.println("Chef: " + chefName);
+            for (Dish dish : dishes) {
+                System.out.println("  Dish ID: " + dish.getDishID());
+                System.out.println("  Dish Name: " + dish.getDishName());
+                System.out.println("  Preparation Time: " + dish.getPreparingTime());
+                System.out.println("  Price: " + dish.getDishPrice());
+            }
         });
 
         SC.close();
