@@ -9,7 +9,7 @@ Create Java classes with:
    - Ask the user to input a `number`.
    - Find the `largest digit` from that number.
 
-### Example Input/Output
+### Sample Input/Output
 
 #### Input:
 ```
