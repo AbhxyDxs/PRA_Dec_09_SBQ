@@ -28,7 +28,7 @@ Create Java classes with:
 - **Method 2: `reverseSortedMap(Map<Integer, Double> gradeMap)`**
   - **Input**: A map of student IDs and their average grades.
   - **Process**:
-    - Sorts the map in descending order of average grades.
+    - Sorts the map in descending order of Student ID.
   - **Output**: Returns a reversed `LinkedHashMap<Integer, Double>`.
 
 - **Method 3: `studentsAboveThreshold(List<Student> students, double threshold)`**
@@ -77,10 +77,11 @@ Create Java classes with:
    - Student ID: `102`, Average Grade: `85.00`
    - Student ID: `103`, Average Grade: `67.67`
 
-2. **Reversed Map (Descending Order by Average Grade)**:
+2. **Reversed Map (Descending Order by Student ID)**:
+   - Student ID: `103`, Average Grade: `67.67`
    - Student ID: `102`, Average Grade: `85.00`
    - Student ID: `101`, Average Grade: `84.33`
-   - Student ID: `103`, Average Grade: `67.67`
+
 
 3. **Students with Average Grade ≥ 80**:
    - `Alice`
