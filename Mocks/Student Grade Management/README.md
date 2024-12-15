@@ -10,7 +10,7 @@ Create Java classes with:
 - **Fields**:
   - `studentID` (int)
   - `studentName` (String)
-  - `grades` (List<Integer>)
+  - `grades` (Integer List)
 
 - **Methods**:
   - Constructor to initialize all fields.
