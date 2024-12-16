@@ -41,7 +41,7 @@ class Mobile {
 class MobileService{
 	public List<String> getMobileBrandWithPlansGreaterThanNThreshold(List<Mobile> M,int t) {
 //		ArrayList<String> brands = new ArrayList<String>();
-		//used set, so even if multiple service providers meets the threshold brands won't be added multiple times!
+		//used set, so even if multiple service providers meets the threshold, brands won't be added multiple times!
 		Set<String> brands = new HashSet<>();
 		for (Mobile Mob : M) {
 		    for (ServiceProvider ServP : Mob.mobileSP) {
