@@ -2,22 +2,22 @@
 
 #### Plan
 - **Attributes:**
-  - Plan ID
-  - Plan Name
-  - Plan Price
+  - int `Plan ID`
+  - String `Plan Name`
+  - double `Plan Price`
 
 #### Service Provider
 - **Attributes:**
-  - Sp ID
-  - Sp Name
-  - List of Plans (`<Plan>`)
+  - int `SpID`
+  - String `SpName`
+  - List of Plan `SpPlans`
 
 #### Mobile
 - **Attributes:**
-  - Mobile ID
-  - Mobile Brand
-  - Mobile Price
-  - Service Provider (`<ServiceProvider>`)
+  - int `MobileID`
+  - String `MobileBrand`
+  - double `MobilePrice`
+  - List of ServiceProvider `mobileSP`
 
 ### Requirements
 1. **Generate Getters and Setters**
