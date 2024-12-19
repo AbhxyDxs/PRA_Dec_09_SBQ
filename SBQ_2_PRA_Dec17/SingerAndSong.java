@@ -60,36 +60,36 @@ class Service{
 }
 public class SingerAndSong {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner SC = new Scanner(System.in);
         List<Singer> singers = new ArrayList<>();
 
         System.out.print("Enter Number of Singers: ");
-        int n = scanner.nextInt();
-        scanner.nextLine();
+        int n = SC.nextInt();
+        SC.nextLine();
 
         for (int i = 0; i < n; i++) {
             System.out.print("Enter Singer ID: ");
-            String singerId = scanner.nextLine();
+            String singerId = SC.nextLine();
             System.out.print("Enter Singer Name: ");
-            String singerName = scanner.nextLine();
+            String singerName = SC.nextLine();
 
             System.out.print("Enter number of songs: ");
-            int sN = scanner.nextInt();
-            scanner.nextLine();
+            int sN = SC.nextInt();
+            SC.nextLine();
 
             List<Song> songs = new ArrayList<>();
             for (int j = 0; j < sN; j++) {
                 System.out.print("Enter Song ID: ");
-                String songId = scanner.nextLine();
+                String songId = SC.nextLine();
                 System.out.print("Enter Song Name: ");
-                String songName = scanner.nextLine();
+                String songName = SC.nextLine();
                 System.out.print("Enter Genre: ");
-                String genre = scanner.nextLine();
+                String genre = SC.nextLine();
                 System.out.print("Enter Audience Size: ");
-                int audienceSize = scanner.nextInt();
+                int audienceSize = SC.nextInt();
                 System.out.print("Enter Performance Budget: ");
-                float performanceBudget = scanner.nextFloat();
-                scanner.nextLine();
+                float performanceBudget = SC.nextFloat();
+                SC.nextLine();
 
                 songs.add(new Song(songId, songName, genre, audienceSize, performanceBudget));
             }
@@ -97,7 +97,7 @@ public class SingerAndSong {
         }
         
         System.out.print("\nEnter Min Budget: ");
-        double minBudget = scanner.nextDouble();
+        double minBudget = SC.nextDouble();
         
         Service service = new Service();
  
