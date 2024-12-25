@@ -81,24 +81,3 @@ Activities with calories above 450.0:
 Cycling
 Swimming
 ```
-### Test Case 2
-**Input**:
-```
-1
-1
-Alice
-2
-201
-Yoga
-200.0
-202
-Walking
-150.0
-202
-100.0
-```
-**Output**:
-```
-No members found for activity 202
-No activities found above the threshold.
-```
