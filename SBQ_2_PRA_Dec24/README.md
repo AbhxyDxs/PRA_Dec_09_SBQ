@@ -5,7 +5,7 @@
 ### Workout
  - int `activityCode`
  - String `activityName`
- - int `caloriesBurned` 
+ - double `caloriesBurned` 
 
 ### Member
  - int `memberID`
