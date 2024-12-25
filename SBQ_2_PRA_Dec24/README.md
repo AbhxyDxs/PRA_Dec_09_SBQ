@@ -24,7 +24,7 @@
 
 2. **Find Activities with Calories Burned Above a Threshold**:
    - Input : `List<Member> Members, double threshold`
-   - Output : `List<Workout> Workouts`
+   - Output : `List<String>` Workout Names
    - List all unique activity names where the calories burned is greater than a given threshold. 
    - Display : `Activities with calories above <threshold>: <activityName1>,<activityName2>,<activityName3>,...`
    - If no such activities exist, print an appropriate message : `No activities found above the threshold.`
