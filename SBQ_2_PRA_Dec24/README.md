@@ -10,7 +10,7 @@
 ### Member
  - int `memberID`
  - String `memberName`
- - List<Workout> `memberWorkouts`
+ - List&lt;Workout&lt; `memberWorkouts`
 
 
 ## Methods
